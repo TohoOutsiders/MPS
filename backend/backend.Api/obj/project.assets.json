@@ -12592,11 +12592,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\项目\\MPS\\backend\\backend.Api\\backend.Api.csproj",
+      "projectUniqueName": "D:\\项目\\MPS\\MPS\\backend\\backend.Api\\backend.Api.csproj",
       "projectName": "backend.Api",
-      "projectPath": "D:\\项目\\MPS\\backend\\backend.Api\\backend.Api.csproj",
+      "projectPath": "D:\\项目\\MPS\\MPS\\backend\\backend.Api\\backend.Api.csproj",
       "packagesPath": "C:\\Users\\TinkingIdea\\.nuget\\packages\\",
-      "outputPath": "D:\\项目\\MPS\\backend\\backend.Api\\obj\\",
+      "outputPath": "D:\\项目\\MPS\\MPS\\backend\\backend.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12615,8 +12615,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\项目\\MPS\\backend\\backend.Core\\backend.Core.csproj": {
-              "projectPath": "D:\\项目\\MPS\\backend\\backend.Core\\backend.Core.csproj"
+            "D:\\项目\\MPS\\MPS\\backend\\backend.Core\\backend.Core.csproj": {
+              "projectPath": "D:\\项目\\MPS\\MPS\\backend\\backend.Core\\backend.Core.csproj"
             }
           }
         }

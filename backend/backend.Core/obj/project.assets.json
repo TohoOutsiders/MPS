@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\项目\\MPS\\backend\\backend.Core\\backend.Core.csproj",
+      "projectUniqueName": "D:\\项目\\MPS\\MPS\\backend\\backend.Core\\backend.Core.csproj",
       "projectName": "backend.Core",
-      "projectPath": "D:\\项目\\MPS\\backend\\backend.Core\\backend.Core.csproj",
+      "projectPath": "D:\\项目\\MPS\\MPS\\backend\\backend.Core\\backend.Core.csproj",
       "packagesPath": "C:\\Users\\TinkingIdea\\.nuget\\packages\\",
-      "outputPath": "D:\\项目\\MPS\\backend\\backend.Core\\obj\\",
+      "outputPath": "D:\\项目\\MPS\\MPS\\backend\\backend.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
