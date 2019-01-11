@@ -78,7 +78,7 @@ namespace backend.Api
 
             app.UseCors("mps");
             app.UseAuthentication();
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
