@@ -7,3 +7,12 @@ D:\项目\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.Assembly
 D:\项目\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.AssemblyInfo.cs
 D:\项目\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.dll
 D:\项目\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.pdb
+G:\MVC\MPS\backend\backend.Core\bin\Debug\netcoreapp2.1\backend.Core.deps.json
+G:\MVC\MPS\backend\backend.Core\bin\Debug\netcoreapp2.1\backend.Core.dll
+G:\MVC\MPS\backend\backend.Core\bin\Debug\netcoreapp2.1\backend.Core.pdb
+G:\MVC\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.csprojAssemblyReference.cache
+G:\MVC\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.csproj.CoreCompileInputs.cache
+G:\MVC\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.AssemblyInfoInputs.cache
+G:\MVC\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.AssemblyInfo.cs
+G:\MVC\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.dll
+G:\MVC\MPS\backend\backend.Core\obj\Debug\netcoreapp2.1\backend.Core.pdb

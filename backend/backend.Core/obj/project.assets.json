@@ -537,7 +537,7 @@
       ]
     },
     "Microsoft.NETCore.Targets/2.1.0": {
-      "sha512": "R+z1NrmXptbA6maCVVPcJ9xrCjUZFGEW1CHQeCqOyRni6PFxANYjiEjDBAK7wQUdmdZFy3xKJYUY0qhpb+hSLQ==",
+      "sha512": "etaYwrLZQUS+b3UWTpCnUggd6SQ/ZIkZ5pHnoR7+dIWt/wp2Rv3CvMKOZISsrt7FYCHKwCxfcepuuyEWkQxADg==",
       "type": "package",
       "path": "microsoft.netcore.targets/2.1.0",
       "files": [
@@ -554,12 +554,11 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "R73gEjqCkI2Nw/IlN8QvcgPNklqQiPowp47JwvW0Bnp/RZnjN4UrJwEvWVJWRK1MsQ+HIfGe9i4aQlfK+ei9jA==",
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "build/netstandard2.0/NETStandard.Library.targets",
@@ -689,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TinkingIdea\\.nuget\\packages\\": {},
+    "C:\\Users\\Konori\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\项目\\MPS\\backend\\backend.Core\\backend.Core.csproj",
+      "projectUniqueName": "G:\\MVC\\MPS\\backend\\backend.Core\\backend.Core.csproj",
       "projectName": "backend.Core",
-      "projectPath": "D:\\项目\\MPS\\backend\\backend.Core\\backend.Core.csproj",
-      "packagesPath": "C:\\Users\\TinkingIdea\\.nuget\\packages\\",
-      "outputPath": "D:\\项目\\MPS\\backend\\backend.Core\\obj\\",
+      "projectPath": "G:\\MVC\\MPS\\backend\\backend.Core\\backend.Core.csproj",
+      "packagesPath": "C:\\Users\\Konori\\.nuget\\packages\\",
+      "outputPath": "G:\\MVC\\MPS\\backend\\backend.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\TinkingIdea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Konori\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
