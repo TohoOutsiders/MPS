@@ -19,7 +19,7 @@ namespace backend.Api.Controllers
     [ApiController]
     public class AuthorizeController : ControllerBase
     {
-        private JwtSettings _jwtSettings;
+        private readonly JwtSettings _jwtSettings;
 
         public AuthorizeController(IOptions<JwtSettings> jwtSettings)
         {
