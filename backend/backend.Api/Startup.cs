@@ -4,11 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using backend.Core;
+using backend.Core.Interfaces;
+using backend.Infrastructure.DataBase;
+using backend.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -30,6 +34,12 @@ namespace backend.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<MyContext>(options =>
+            {
+                var connectionString = Configuration.GetConnectionString("dbContext");
+                options.UseMySql(connectionString);
+            });
 
             services.Configure<JwtSettings>(Configuration.GetSection("JwtSettings"));
 
@@ -62,6 +72,8 @@ namespace backend.Api
                     .AllowCredentials();
                 });
             });
+
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

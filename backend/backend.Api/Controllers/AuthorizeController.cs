@@ -12,6 +12,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.IdentityModel.Tokens.Jwt;
+using backend.Core.Interfaces;
 
 namespace backend.Api.Controllers
 {
@@ -19,10 +20,14 @@ namespace backend.Api.Controllers
     [ApiController]
     public class AuthorizeController : ControllerBase
     {
+        private readonly IUserRepository _userRepository;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly JwtSettings _jwtSettings;
 
-        public AuthorizeController(IOptions<JwtSettings> jwtSettings)
+        public AuthorizeController(IOptions<JwtSettings> jwtSettings, IUserRepository userRepository, IUnitOfWork unitOfWork)
         {
+            _userRepository = userRepository;
+            _unitOfWork = unitOfWork;
             _jwtSettings = jwtSettings.Value;
         }
 
@@ -45,6 +50,35 @@ namespace backend.Api.Controllers
             var token = new JwtSecurityToken(_jwtSettings.Issuer, _jwtSettings.Audience, claim, DateTime.Now, DateTime.Now.AddDays(1), creds);
 
             return Ok(new { token = new JwtSecurityTokenHandler().WriteToken(token), tokenHeader = "Bearer" });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Regist([FromBody] RegistViewModel viewModel)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
+            try
+            {
+                var user = new User
+                {
+                    Id = 0,
+                    UserName = viewModel.UserName,
+                    NickName = viewModel.NickName,
+                    Password = viewModel.Password,
+                    UserRole = CustomEnum.UserRole.User
+                };
+
+                _userRepository.AddUser(user);
+
+                await _unitOfWork.SaveAsync();
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.ToString());
+            }
         }
     }
 }
