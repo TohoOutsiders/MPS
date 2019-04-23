@@ -3,3 +3,8 @@
 ################################################################################
 
 /backend/.vs
+/backend/backend.Api/bin/Debug/netcoreapp2.1
+/backend/backend.Api/obj/Debug/netcoreapp2.1
+/backend/backend.Api/obj
+/backend/backend.Web/bin/Debug/netcoreapp2.1
+/backend/backend.Web/obj
