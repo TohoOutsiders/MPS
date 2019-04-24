@@ -8,3 +8,5 @@
 /backend/backend.Api/obj
 /backend/backend.Web/bin/Debug/netcoreapp2.1
 /backend/backend.Web/obj
+/backend/backend.Core/bin/Debug/netcoreapp2.1
+/backend/backend.Core/obj

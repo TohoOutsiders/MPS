@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace backend.Api.Controllers
 {
@@ -47,6 +48,9 @@ namespace backend.Api.Controllers
             {
                 var user = _db.Users.SingleOrDefault(c => c.UserName == model.UserName);
 
+                if (user == null)
+                    return Json(ReturnJson.NotFound("该用户不存在"));
+
                 if (user.Password != Crypto.DesEncrypt(model.Password))
                     return Json(ReturnJson.ServerError("用户名密码错误"));
 
@@ -76,7 +80,9 @@ namespace backend.Api.Controllers
                     UserName = model.UserName,
                     NickName = model.NickName,
                     Phone = model.Phone,
+                    IsVerifyPhone = CustomerEnum.Verification.False,
                     Email = model.Email,
+                    IsVerifyEmail = CustomerEnum.Verification.False,
                     Password = Crypto.DesEncrypt(model.Password),
                     UserRole = CustomerEnum.UserRole.Admin
                 };

@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary3\backend.Core.csproj" />
+    <ProjectReference Include="..\backend.Core\backend.Core.csproj" />
   </ItemGroup>
 
 </Project>
